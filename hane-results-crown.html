@@ -1,0 +1,4017 @@
+<!DOCTYPE html>
+<html class="ods_378f4613-d793-446f-8078-72723bd7264c" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>Results: hane.sas</title>
+<style>
+/*<![CDATA[*/
+.ods_378f4613-d793-446f-8078-72723bd7264c .body.c section > table, .ods_378f4613-d793-446f-8078-72723bd7264c .body.c section > pre, .ods_378f4613-d793-446f-8078-72723bd7264c .body.c div > table,
+.ods_378f4613-d793-446f-8078-72723bd7264c .body.c div > pre, .ods_378f4613-d793-446f-8078-72723bd7264c .body.c article > table, .ods_378f4613-d793-446f-8078-72723bd7264c .body.c article > pre,
+.ods_378f4613-d793-446f-8078-72723bd7264c .body.j section > table, .ods_378f4613-d793-446f-8078-72723bd7264c .body.j section > pre, .ods_378f4613-d793-446f-8078-72723bd7264c .body.j div > table,
+.ods_378f4613-d793-446f-8078-72723bd7264c .body.j div > pre, .ods_378f4613-d793-446f-8078-72723bd7264c .body.j article > table, .ods_378f4613-d793-446f-8078-72723bd7264c .body.j article > pre,
+.ods_378f4613-d793-446f-8078-72723bd7264c .body.c p.note, .ods_378f4613-d793-446f-8078-72723bd7264c .body.c p.warning, .ods_378f4613-d793-446f-8078-72723bd7264c .body.c p.error, .ods_378f4613-d793-446f-8078-72723bd7264c .body.c p.fatal,
+.ods_378f4613-d793-446f-8078-72723bd7264c .body.j p.note, .ods_378f4613-d793-446f-8078-72723bd7264c .body.j p.warning, .ods_378f4613-d793-446f-8078-72723bd7264c .body.j p.error, .ods_378f4613-d793-446f-8078-72723bd7264c .body.j p.fatal,
+.ods_378f4613-d793-446f-8078-72723bd7264c .body.c > table.layoutcontainer, .ods_378f4613-d793-446f-8078-72723bd7264c .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.l table, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.l pre, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.l p.note,
+.ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.l p.warning, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.l p.error, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.l p.fatal { margin-left: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.c table, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.c pre, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.c p.note,
+.ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.c p.warning, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.c p.error, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.r table, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.r pre, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.r p.note,
+.ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.r table, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.r pre, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.r p.note,
+.ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.r p.warning, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.r p.error, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion.r p.fatal { margin-right: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c article, .ods_378f4613-d793-446f-8078-72723bd7264c aside, .ods_378f4613-d793-446f-8078-72723bd7264c details, .ods_378f4613-d793-446f-8078-72723bd7264c figcaption, .ods_378f4613-d793-446f-8078-72723bd7264c figure, .ods_378f4613-d793-446f-8078-72723bd7264c footer, .ods_378f4613-d793-446f-8078-72723bd7264c header, .ods_378f4613-d793-446f-8078-72723bd7264c hgroup, .ods_378f4613-d793-446f-8078-72723bd7264c nav, .ods_378f4613-d793-446f-8078-72723bd7264c section { display: block }
+html.ods_378f4613-d793-446f-8078-72723bd7264c { font-size: 100% }
+.ods_378f4613-d793-446f-8078-72723bd7264c .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_378f4613-d793-446f-8078-72723bd7264c sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_378f4613-d793-446f-8078-72723bd7264c sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_378f4613-d793-446f-8078-72723bd7264c ul, .ods_378f4613-d793-446f-8078-72723bd7264c ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_378f4613-d793-446f-8078-72723bd7264c dd { margin: 0 0 0 40px }
+.ods_378f4613-d793-446f-8078-72723bd7264c nav ul, .ods_378f4613-d793-446f-8078-72723bd7264c nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c img { border: 0; vertical-align: middle }
+.ods_378f4613-d793-446f-8078-72723bd7264c svg:not(:root) { overflow: hidden }
+.ods_378f4613-d793-446f-8078-72723bd7264c figure { margin: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c table { border-collapse: collapse; border-spacing: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c p { margin-top: 0; text-align: left }
+.ods_378f4613-d793-446f-8078-72723bd7264c h1.heading1 { text-align: left }
+.ods_378f4613-d793-446f-8078-72723bd7264c h2.heading2 { text-align: left }
+.ods_378f4613-d793-446f-8078-72723bd7264c h3.heading3 { text-align: left }
+.ods_378f4613-d793-446f-8078-72723bd7264c h4.heading4 { text-align: left }
+.ods_378f4613-d793-446f-8078-72723bd7264c h5.heading5 { text-align: left }
+.ods_378f4613-d793-446f-8078-72723bd7264c h6.heading6 { text-align: left }
+.ods_378f4613-d793-446f-8078-72723bd7264c span { text-align: left }
+.ods_378f4613-d793-446f-8078-72723bd7264c table { margin-bottom: 1em }
+.ods_378f4613-d793-446f-8078-72723bd7264c td, .ods_378f4613-d793-446f-8078-72723bd7264c th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_378f4613-d793-446f-8078-72723bd7264c td[class$="fixed"], .ods_378f4613-d793-446f-8078-72723bd7264c th[class$="fixed"] { white-space: pre }
+.ods_378f4613-d793-446f-8078-72723bd7264c section, .ods_378f4613-d793-446f-8078-72723bd7264c article { padding-top: 1px; padding-bottom: 8px }
+.ods_378f4613-d793-446f-8078-72723bd7264c hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c .stacked-value { text-align: left; display: block }
+.ods_378f4613-d793-446f-8078-72723bd7264c .stacked-cell > .stacked-value, .ods_378f4613-d793-446f-8078-72723bd7264c td.data > td.data, .ods_378f4613-d793-446f-8078-72723bd7264c th.data > td.data, .ods_378f4613-d793-446f-8078-72723bd7264c th.data > th.data, .ods_378f4613-d793-446f-8078-72723bd7264c td.data > th.data, .ods_378f4613-d793-446f-8078-72723bd7264c th.header > th.header { border: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c .stacked-cell > div.data { border-width: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer > p { margin: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_378f4613-d793-446f-8078-72723bd7264c .batch { display: table }
+.ods_378f4613-d793-446f-8078-72723bd7264c .toc { display: none }
+.ods_378f4613-d793-446f-8078-72723bd7264c .proc_note_group, .ods_378f4613-d793-446f-8078-72723bd7264c .proc_title_group { margin-bottom: 1em }
+.ods_378f4613-d793-446f-8078-72723bd7264c p.proctitle { margin: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c p.note, .ods_378f4613-d793-446f-8078-72723bd7264c p.warning, .ods_378f4613-d793-446f-8078-72723bd7264c p.error, .ods_378f4613-d793-446f-8078-72723bd7264c p.fatal { display: table }
+.ods_378f4613-d793-446f-8078-72723bd7264c .notebanner, .ods_378f4613-d793-446f-8078-72723bd7264c .warnbanner, .ods_378f4613-d793-446f-8078-72723bd7264c .errorbanner, .ods_378f4613-d793-446f-8078-72723bd7264c .fatalbanner,
+.ods_378f4613-d793-446f-8078-72723bd7264c .notecontent, .ods_378f4613-d793-446f-8078-72723bd7264c .warncontent, .ods_378f4613-d793-446f-8078-72723bd7264c .errorcontent, .ods_378f4613-d793-446f-8078-72723bd7264c .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_378f4613-d793-446f-8078-72723bd7264c .notebanner, .ods_378f4613-d793-446f-8078-72723bd7264c .warnbanner, .ods_378f4613-d793-446f-8078-72723bd7264c .errorbanner, .ods_378f4613-d793-446f-8078-72723bd7264c .fatalbanner { padding-right: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c .body > div > ol li { text-align: left }
+.ods_378f4613-d793-446f-8078-72723bd7264c .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_378f4613-d793-446f-8078-72723bd7264c .c { text-align: center }
+.ods_378f4613-d793-446f-8078-72723bd7264c .r { text-align: right }
+.ods_378f4613-d793-446f-8078-72723bd7264c .l { text-align: left }
+.ods_378f4613-d793-446f-8078-72723bd7264c .j { text-align: justify }
+.ods_378f4613-d793-446f-8078-72723bd7264c .d { text-align: right }
+.ods_378f4613-d793-446f-8078-72723bd7264c .b { vertical-align: bottom }
+.ods_378f4613-d793-446f-8078-72723bd7264c .m { vertical-align: middle }
+.ods_378f4613-d793-446f-8078-72723bd7264c .t { vertical-align: top }
+.ods_378f4613-d793-446f-8078-72723bd7264c .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c a:active { color: #800080 }
+.ods_378f4613-d793-446f-8078-72723bd7264c .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .batch > tbody, .ods_378f4613-d793-446f-8078-72723bd7264c .batch > thead, .ods_378f4613-d793-446f-8078-72723bd7264c .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .batch { border: hidden; }
+.ods_378f4613-d793-446f-8078-72723bd7264c .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_378f4613-d793-446f-8078-72723bd7264c .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .bycontentfolder {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .bylinecontainer > col, .ods_378f4613-d793-446f-8078-72723bd7264c .bylinecontainer > colgroup > col, .ods_378f4613-d793-446f-8078-72723bd7264c .bylinecontainer > colgroup, .ods_378f4613-d793-446f-8078-72723bd7264c .bylinecontainer > tr, .ods_378f4613-d793-446f-8078-72723bd7264c .bylinecontainer > * > tr, .ods_378f4613-d793-446f-8078-72723bd7264c .bylinecontainer > thead, .ods_378f4613-d793-446f-8078-72723bd7264c .bylinecontainer > tbody, .ods_378f4613-d793-446f-8078-72723bd7264c .bylinecontainer > tfoot { border: none; }
+.ods_378f4613-d793-446f-8078-72723bd7264c .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .cell, .ods_378f4613-d793-446f-8078-72723bd7264c .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .contentfolder, .ods_378f4613-d793-446f-8078-72723bd7264c .contentitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .contentproclabel, .ods_378f4613-d793-446f-8078-72723bd7264c .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .data, .ods_378f4613-d793-446f-8078-72723bd7264c .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .folderaction {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .graph > tbody, .ods_378f4613-d793-446f-8078-72723bd7264c .graph > thead, .ods_378f4613-d793-446f-8078-72723bd7264c .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .graph { border: hidden; }
+.ods_378f4613-d793-446f-8078-72723bd7264c .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_378f4613-d793-446f-8078-72723bd7264c .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .heading1, .ods_378f4613-d793-446f-8078-72723bd7264c .heading2, .ods_378f4613-d793-446f-8078-72723bd7264c .heading3, .ods_378f4613-d793-446f-8078-72723bd7264c .heading4, .ods_378f4613-d793-446f-8078-72723bd7264c .heading5, .ods_378f4613-d793-446f-8078-72723bd7264c .heading6 { font-family: Arial, Helvetica, sans-serif }
+.ods_378f4613-d793-446f-8078-72723bd7264c .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .indexaction, .ods_378f4613-d793-446f-8078-72723bd7264c .indexitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .layoutcontainer, .ods_378f4613-d793-446f-8078-72723bd7264c .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c a:link { color: #0000ff }
+.ods_378f4613-d793-446f-8078-72723bd7264c .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .list3, .ods_378f4613-d793-446f-8078-72723bd7264c .list4, .ods_378f4613-d793-446f-8078-72723bd7264c .list5, .ods_378f4613-d793-446f-8078-72723bd7264c .list6, .ods_378f4613-d793-446f-8078-72723bd7264c .list7, .ods_378f4613-d793-446f-8078-72723bd7264c .list8, .ods_378f4613-d793-446f-8078-72723bd7264c .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .listitem3, .ods_378f4613-d793-446f-8078-72723bd7264c .listitem4, .ods_378f4613-d793-446f-8078-72723bd7264c .listitem5, .ods_378f4613-d793-446f-8078-72723bd7264c .listitem6, .ods_378f4613-d793-446f-8078-72723bd7264c .listitem7, .ods_378f4613-d793-446f-8078-72723bd7264c .listitem8, .ods_378f4613-d793-446f-8078-72723bd7264c .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .output > tbody, .ods_378f4613-d793-446f-8078-72723bd7264c .output > thead, .ods_378f4613-d793-446f-8078-72723bd7264c .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .output { border: hidden; }
+.ods_378f4613-d793-446f-8078-72723bd7264c .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_378f4613-d793-446f-8078-72723bd7264c .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .pagesitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .pagesproclabel, .ods_378f4613-d793-446f-8078-72723bd7264c .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .parskip > col, .ods_378f4613-d793-446f-8078-72723bd7264c .parskip > colgroup > col, .ods_378f4613-d793-446f-8078-72723bd7264c .parskip > colgroup, .ods_378f4613-d793-446f-8078-72723bd7264c .parskip > tr, .ods_378f4613-d793-446f-8078-72723bd7264c .parskip > * > tr, .ods_378f4613-d793-446f-8078-72723bd7264c .parskip > thead, .ods_378f4613-d793-446f-8078-72723bd7264c .parskip > tbody, .ods_378f4613-d793-446f-8078-72723bd7264c .parskip > tfoot { border: none; }
+.ods_378f4613-d793-446f-8078-72723bd7264c .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_378f4613-d793-446f-8078-72723bd7264c .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .systemfooter, .ods_378f4613-d793-446f-8078-72723bd7264c .systemfooter10, .ods_378f4613-d793-446f-8078-72723bd7264c .systemfooter2, .ods_378f4613-d793-446f-8078-72723bd7264c .systemfooter3, .ods_378f4613-d793-446f-8078-72723bd7264c .systemfooter4, .ods_378f4613-d793-446f-8078-72723bd7264c .systemfooter5, .ods_378f4613-d793-446f-8078-72723bd7264c .systemfooter6, .ods_378f4613-d793-446f-8078-72723bd7264c .systemfooter7, .ods_378f4613-d793-446f-8078-72723bd7264c .systemfooter8, .ods_378f4613-d793-446f-8078-72723bd7264c .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .systemtitle, .ods_378f4613-d793-446f-8078-72723bd7264c .systemtitle10, .ods_378f4613-d793-446f-8078-72723bd7264c .systemtitle2, .ods_378f4613-d793-446f-8078-72723bd7264c .systemtitle3, .ods_378f4613-d793-446f-8078-72723bd7264c .systemtitle4, .ods_378f4613-d793-446f-8078-72723bd7264c .systemtitle5, .ods_378f4613-d793-446f-8078-72723bd7264c .systemtitle6, .ods_378f4613-d793-446f-8078-72723bd7264c .systemtitle7, .ods_378f4613-d793-446f-8078-72723bd7264c .systemtitle8, .ods_378f4613-d793-446f-8078-72723bd7264c .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer > col, .ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer > colgroup > col, .ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer > colgroup, .ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer > tr, .ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer > * > tr, .ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer > thead, .ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer > tbody, .ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer > tfoot { border: none; }
+.ods_378f4613-d793-446f-8078-72723bd7264c .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .table > col, .ods_378f4613-d793-446f-8078-72723bd7264c .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .table > tr, .ods_378f4613-d793-446f-8078-72723bd7264c .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .table { border: hidden; }
+.ods_378f4613-d793-446f-8078-72723bd7264c .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_378f4613-d793-446f-8078-72723bd7264c .titleandnotecontainer > col, .ods_378f4613-d793-446f-8078-72723bd7264c .titleandnotecontainer > colgroup > col, .ods_378f4613-d793-446f-8078-72723bd7264c .titleandnotecontainer > colgroup, .ods_378f4613-d793-446f-8078-72723bd7264c .titleandnotecontainer > tr, .ods_378f4613-d793-446f-8078-72723bd7264c .titleandnotecontainer > * > tr, .ods_378f4613-d793-446f-8078-72723bd7264c .titleandnotecontainer > thead, .ods_378f4613-d793-446f-8078-72723bd7264c .titleandnotecontainer > tbody, .ods_378f4613-d793-446f-8078-72723bd7264c .titleandnotecontainer > tfoot { border: none; }
+.ods_378f4613-d793-446f-8078-72723bd7264c .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c a:visited { color: #800080 }
+.ods_378f4613-d793-446f-8078-72723bd7264c .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_378f4613-d793-446f-8078-72723bd7264c .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_378f4613-d793-446f-8078-72723bd7264c" class="c body">
+<h1 class="body toc">Results: hane.sas</h1>
+<section data-name="Glimmix" data-sec-type="proc">
+<div id="IDX" class="proc_title_group">
+<p class="c proctitle">The GLIMMIX Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Glimmix Procedure</h1>
+<article aria-label="Model Information">
+<h1 class="contentitem toc">Model Information</h1>
+<table class="table" style="border-spacing: 0" aria-label="Model Information">
+<caption aria-label="Model Information"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Data Set</th>
+<td class="data">WORK.CROWN</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Response Variable</th>
+<td class="data">Crown</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Response Distribution</th>
+<td class="data">Gaussian</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Link Function</th>
+<td class="data">Identity</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Variance Function</th>
+<td class="data">Default</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Variance Matrix Blocked By</th>
+<td class="data">GLB</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Estimation Technique</th>
+<td class="data">Restricted Maximum Likelihood</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Degrees of Freedom Method</th>
+<td class="data">Kenward-Roger</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Fixed Effects SE Adjustment</th>
+<td class="data">Kenward-Roger</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX1" aria-label="Class Level Information">
+<h1 class="contentitem toc">Class Level Information</h1>
+<table class="table" style="border-spacing: 0" aria-label="Class Level Information">
+<caption aria-label="Class Level Information"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Class</th>
+<th class="r b header" scope="col">Levels</th>
+<th class="b header" scope="col">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Year</th>
+<td class="r data">3</td>
+<td class="data">Fifth Seventh Sixth</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location</th>
+<td class="r data">2</td>
+<td class="data">Hill Farm LA Tech</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Block</th>
+<td class="r data">4</td>
+<td class="data">1 2 3 4</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Family</th>
+<td class="r data">6</td>
+<td class="data">AGH2 AGH25 AGHS1 AGHS2 AGHS3 AGHS4</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GLB</th>
+<td class="r data">48</td>
+<td class="data">AGH25_Hill Farm_1 AGH25_Hill Farm_2 AGH25_Hill Farm_3 AGH25_Hill Farm_4 AGH25_LA Tech_1 AGH25_LA Tech_2 AGH25_LA Tech_3 AGH25_LA Tech_4 AGH2_Hill Farm_1 AGH2_Hill Farm_2 AGH2_Hill Farm_3 AGH2_Hill Farm_4 AGH2_LA Tech_1 AGH2_LA Tech_2 AGH2_LA Tech_3 AGH2_LA Tech_4 AGHS1_Hill Farm_1 AGHS1_Hill Farm_2 AGHS1_Hill Farm_3 AGHS1_Hill Farm_4 AGHS1_LA Tech_1 AGHS1_LA Tech_2 AGHS1_LA Tech_3 AGHS1_LA Tech_4 AGHS2_Hill Farm_1 AGHS2_Hill Farm_2 AGHS2_Hill Farm_3 AGHS2_Hill Farm_4 AGHS2_LA Tech_1 AGHS2_LA Tech_2 AGHS2_LA Tech_3 AGHS2_LA Tech_4 AGHS3_Hill Farm_1 AGHS3_Hill Farm_2 AGHS3_Hill Farm_3 AGHS3_Hill Farm_4 AGHS3_LA Tech_1 AGHS3_LA Tech_2 AGHS3_LA Tech_3 AGHS3_LA Tech_4 AGHS4_Hill Farm_1 AGHS4_Hill Farm_2 AGHS4_Hill Farm_3 AGHS4_Hill Farm_4 AGHS4_LA Tech_1 AGHS4_LA Tech_2 AGHS4_LA Tech_3 AGHS4_LA Tech_4</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX2" aria-label="Number of Observations">
+<h1 class="contentitem toc">Number of Observations</h1>
+<table class="table" style="border-spacing: 0" aria-label="Number of Observations">
+<caption aria-label="Number of Observations"></caption>
+<colgroup><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">144</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">144</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX3" aria-label="Dimensions">
+<h1 class="contentitem toc">Dimensions</h1>
+<table class="table" style="border-spacing: 0" aria-label="Dimensions">
+<caption aria-label="Dimensions"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Dimensions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">G-side Cov. Parameters</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">R-side Cov. Parameters</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Columns in X</th>
+<td class="r data">84</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Columns in Z per Subject</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Subjects (Blocks in V)</th>
+<td class="r data">48</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Max Obs per Subject</th>
+<td class="r data">3</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX4" aria-label="Optimization Information">
+<h1 class="contentitem toc">Optimization Information</h1>
+<table class="table" style="border-spacing: 0" aria-label="Optimization Information">
+<caption aria-label="Optimization Information"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Optimization Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Optimization Technique</th>
+<td class="data">Dual Quasi-Newton</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Parameters in Optimization</th>
+<td class="data">2</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Lower Boundaries</th>
+<td class="data">2</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Upper Boundaries</th>
+<td class="data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Fixed Effects</th>
+<td class="data">Profiled</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Residual Variance</th>
+<td class="data">Profiled</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Starting From</th>
+<td class="data">Data</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX5" aria-label="Iteration History">
+<h1 class="contentitem toc">Iteration History</h1>
+<table class="table" style="border-spacing: 0" aria-label="Iteration History">
+<caption aria-label="Iteration History"></caption>
+<colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Iteration History</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Iteration</th>
+<th class="r b header" scope="col">Restarts</th>
+<th class="r b header" scope="col">Evaluations</th>
+<th class="r b header" scope="col">Objective<br/>Function</th>
+<th class="r b header" scope="col">Change</th>
+<th class="r b header" scope="col">Max<br/>Gradient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">0</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">4</td>
+<td class="r data">327.11392315</td>
+<td class="r data">.</td>
+<td class="r data" style="white-space: nowrap">7.57E-13</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX6" aria-label="Convergence Status">
+<h1 class="contentitem toc">Convergence Status</h1>
+<table class="table" style="border-spacing: 0" aria-label="Convergence Status">
+<caption aria-label="Convergence Status"></caption>
+<colgroup><col/></colgroup>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (ABSGCONV=0.00001) satisfied.</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX7" aria-label="Hessian Matrix">
+<h1 class="contentitem toc">Hessian Matrix</h1>
+<table class="table" style="border-spacing: 0" aria-label="Hessian Matrix">
+<caption aria-label="Hessian Matrix"></caption>
+<colgroup><col/><col/><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Hessian Matrix</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Cov Parm</th>
+<th class="b header" scope="col">Subject</th>
+<th class="r b header" scope="col">Row</th>
+<th class="r b header" scope="col">Col1</th>
+<th class="r b header" scope="col">Col2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="data">Variance</th>
+<th class="data">GLB</th>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">14.9172</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="data">AR(1)</th>
+<th class="data">GLB</th>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX8" aria-label="Fit Statistics">
+<h1 class="contentitem toc">Fit Statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Fit Statistics">
+<caption aria-label="Fit Statistics"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Fit Statistics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">-2 Res Log Likelihood</th>
+<td class="r data">327.11</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AIC  (smaller is better)</th>
+<td class="r data">333.11</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AICC (smaller is better)</th>
+<td class="r data">333.34</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">BIC  (smaller is better)</th>
+<td class="r data">338.73</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CAIC (smaller is better)</th>
+<td class="r data">341.73</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">HQIC (smaller is better)</th>
+<td class="r data">335.24</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Generalized Chi-Square</th>
+<td class="r data">52.75</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Gener. Chi-Square / DF</th>
+<td class="r data">0.49</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX9" aria-label="Covariance Parameter Estimates">
+<h1 class="contentitem toc">Covariance Parameter Estimates</h1>
+<table class="table" style="border-spacing: 0" aria-label="Covariance Parameter Estimates">
+<caption aria-label="Covariance Parameter Estimates"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Covariance Parameter Estimates</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Cov Parm</th>
+<th class="b header" scope="col">Subject</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Variance</th>
+<th class="data">GLB</th>
+<td class="r data">0.4567</td>
+<td class="r data">0.1485</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AR(1)</th>
+<th class="data">GLB</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Residual</th>
+<th class="data">&#160;</th>
+<td class="r data">0.4884</td>
+<td class="r data">0.08140</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX10" aria-label="Solutions for Fixed Effects">
+<h1 class="contentitem toc">Solutions for Fixed Effects</h1>
+<table class="table" style="border-spacing: 0" aria-label="Solutions for Fixed Effects">
+<caption aria-label="Solutions for Fixed Effects"></caption>
+<colgroup><col/><col/><col/><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Solutions for Fixed Effects</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Effect</th>
+<th class="b header" scope="col">Year</th>
+<th class="b header" scope="col">Location</th>
+<th class="b header" scope="col">Family</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&#160;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">&#160;</th>
+<th class="data">&#160;</th>
+<th class="data">&#160;</th>
+<td class="r data">4.6956</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">9.66</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year</th>
+<th class="data">Fifth</th>
+<th class="data">&#160;</th>
+<th class="data">&#160;</th>
+<td class="r data" style="white-space: nowrap">-3.0771</td>
+<td class="r data">0.4942</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-6.23</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year</th>
+<th class="data">Seventh</th>
+<th class="data">&#160;</th>
+<th class="data">&#160;</th>
+<td class="r data">1.0079</td>
+<td class="r data">0.4942</td>
+<td class="r data">72</td>
+<td class="r data">2.04</td>
+<td class="r data">0.0451</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year</th>
+<th class="data">Sixth</th>
+<th class="data">&#160;</th>
+<th class="data">&#160;</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location</th>
+<th class="data">&#160;</th>
+<th class="data">Hill Farm</th>
+<th class="data">&#160;</th>
+<td class="r data" style="white-space: nowrap">-2.5922</td>
+<td class="r data">0.6874</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-3.77</td>
+<td class="r data">0.0003</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location</th>
+<th class="data">&#160;</th>
+<th class="data">LA Tech</th>
+<th class="data">&#160;</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location</th>
+<th class="data">Fifth</th>
+<th class="data">Hill Farm</th>
+<th class="data">&#160;</th>
+<td class="r data">1.4553</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data">2.08</td>
+<td class="r data">0.0409</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location</th>
+<th class="data">Fifth</th>
+<th class="data">LA Tech</th>
+<th class="data">&#160;</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location</th>
+<th class="data">Seventh</th>
+<th class="data">Hill Farm</th>
+<th class="data">&#160;</th>
+<td class="r data" style="white-space: nowrap">-0.1176</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-0.17</td>
+<td class="r data">0.8668</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location</th>
+<th class="data">Seventh</th>
+<th class="data">LA Tech</th>
+<th class="data">&#160;</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location</th>
+<th class="data">Sixth</th>
+<th class="data">Hill Farm</th>
+<th class="data">&#160;</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location</th>
+<th class="data">Sixth</th>
+<th class="data">LA Tech</th>
+<th class="data">&#160;</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Family</th>
+<th class="data">&#160;</th>
+<th class="data">&#160;</th>
+<th class="data">AGH2</th>
+<td class="r data" style="white-space: nowrap">-3.0492</td>
+<td class="r data">0.6874</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-4.44</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Family</th>
+<th class="data">&#160;</th>
+<th class="data">&#160;</th>
+<th class="data">AGH25</th>
+<td class="r data" style="white-space: nowrap">-2.3896</td>
+<td class="r data">0.6874</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-3.48</td>
+<td class="r data">0.0009</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Family</th>
+<th class="data">&#160;</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS1</th>
+<td class="r data">0.5941</td>
+<td class="r data">0.6874</td>
+<td class="r data">73.62</td>
+<td class="r data">0.86</td>
+<td class="r data">0.3902</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Family</th>
+<th class="data">&#160;</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS2</th>
+<td class="r data">0.8519</td>
+<td class="r data">0.6874</td>
+<td class="r data">73.62</td>
+<td class="r data">1.24</td>
+<td class="r data">0.2192</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Family</th>
+<th class="data">&#160;</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS3</th>
+<td class="r data" style="white-space: nowrap">-0.08741</td>
+<td class="r data">0.6874</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-0.13</td>
+<td class="r data">0.8992</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Family</th>
+<th class="data">&#160;</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Fifth</th>
+<th class="data">&#160;</th>
+<th class="data">AGH2</th>
+<td class="r data">2.6497</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data">3.79</td>
+<td class="r data">0.0003</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Fifth</th>
+<th class="data">&#160;</th>
+<th class="data">AGH25</th>
+<td class="r data">1.7974</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data">2.57</td>
+<td class="r data">0.0122</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Fifth</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS1</th>
+<td class="r data" style="white-space: nowrap">-0.1967</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-0.28</td>
+<td class="r data">0.7791</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Fifth</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS2</th>
+<td class="r data">0.2015</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data">0.29</td>
+<td class="r data">0.7739</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Fifth</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS3</th>
+<td class="r data">0.3601</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data">0.52</td>
+<td class="r data">0.6079</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Fifth</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Seventh</th>
+<th class="data">&#160;</th>
+<th class="data">AGH2</th>
+<td class="r data">0.2702</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data">0.39</td>
+<td class="r data">0.7002</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Seventh</th>
+<th class="data">&#160;</th>
+<th class="data">AGH25</th>
+<td class="r data" style="white-space: nowrap">-0.4015</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-0.57</td>
+<td class="r data">0.5674</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Seventh</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS1</th>
+<td class="r data" style="white-space: nowrap">-0.2398</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-0.34</td>
+<td class="r data">0.7325</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Seventh</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS2</th>
+<td class="r data" style="white-space: nowrap">-0.3092</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-0.44</td>
+<td class="r data">0.6595</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Seventh</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS3</th>
+<td class="r data" style="white-space: nowrap">-0.6890</td>
+<td class="r data">0.6989</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-0.99</td>
+<td class="r data">0.3275</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Seventh</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Sixth</th>
+<th class="data">&#160;</th>
+<th class="data">AGH2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Sixth</th>
+<th class="data">&#160;</th>
+<th class="data">AGH25</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Sixth</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS1</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Sixth</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Sixth</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS3</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<th class="data">Sixth</th>
+<th class="data">&#160;</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGH2</th>
+<td class="r data">1.8355</td>
+<td class="r data">0.9722</td>
+<td class="r data">73.62</td>
+<td class="r data">1.89</td>
+<td class="r data">0.0630</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGH25</th>
+<td class="r data">1.4387</td>
+<td class="r data">0.9722</td>
+<td class="r data">73.62</td>
+<td class="r data">1.48</td>
+<td class="r data">0.1432</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS1</th>
+<td class="r data">0.1333</td>
+<td class="r data">0.9722</td>
+<td class="r data">73.62</td>
+<td class="r data">0.14</td>
+<td class="r data">0.8913</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS2</th>
+<td class="r data">0.4140</td>
+<td class="r data">0.9722</td>
+<td class="r data">73.62</td>
+<td class="r data">0.43</td>
+<td class="r data">0.6714</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS3</th>
+<td class="r data">0.1992</td>
+<td class="r data">0.9722</td>
+<td class="r data">73.62</td>
+<td class="r data">0.20</td>
+<td class="r data">0.8382</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">LA Tech</th>
+<th class="data">AGH2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">LA Tech</th>
+<th class="data">AGH25</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS1</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS3</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<th class="data">&#160;</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGH2</th>
+<td class="r data" style="white-space: nowrap">-1.4704</td>
+<td class="r data">0.9883</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-1.49</td>
+<td class="r data">0.1412</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGH25</th>
+<td class="r data" style="white-space: nowrap">-0.8170</td>
+<td class="r data">0.9883</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-0.83</td>
+<td class="r data">0.4112</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS1</th>
+<td class="r data" style="white-space: nowrap">-0.1838</td>
+<td class="r data">0.9883</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-0.19</td>
+<td class="r data">0.8530</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS2</th>
+<td class="r data" style="white-space: nowrap">-1.0488</td>
+<td class="r data">0.9883</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-1.06</td>
+<td class="r data">0.2921</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS3</th>
+<td class="r data" style="white-space: nowrap">-0.4048</td>
+<td class="r data">0.9883</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-0.41</td>
+<td class="r data">0.6833</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGH2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGH25</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS1</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS3</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Fifth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGH2</th>
+<td class="r data" style="white-space: nowrap">-0.5397</td>
+<td class="r data">0.9883</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-0.55</td>
+<td class="r data">0.5867</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGH25</th>
+<td class="r data" style="white-space: nowrap">-0.4144</td>
+<td class="r data">0.9883</td>
+<td class="r data">72</td>
+<td class="r data" style="white-space: nowrap">-0.42</td>
+<td class="r data">0.6762</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS1</th>
+<td class="r data">0.1666</td>
+<td class="r data">0.9883</td>
+<td class="r data">72</td>
+<td class="r data">0.17</td>
+<td class="r data">0.8666</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS2</th>
+<td class="r data">0.3237</td>
+<td class="r data">0.9883</td>
+<td class="r data">72</td>
+<td class="r data">0.33</td>
+<td class="r data">0.7443</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS3</th>
+<td class="r data">0.5593</td>
+<td class="r data">0.9883</td>
+<td class="r data">72</td>
+<td class="r data">0.57</td>
+<td class="r data">0.5732</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">LA Tech</th>
+<th class="data">AGH2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">LA Tech</th>
+<th class="data">AGH25</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS1</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS3</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Seventh</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGH2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGH25</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS1</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS3</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">Hill Farm</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGH2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGH25</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS1</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS2</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS3</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<th class="data">Sixth</th>
+<th class="data">LA Tech</th>
+<th class="data">AGHS4</th>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX11" aria-label="Type III Tests of Fixed Effects">
+<h1 class="contentitem toc">Type III Tests of Fixed Effects</h1>
+<table class="table" style="border-spacing: 0" aria-label="Type III Tests of Fixed Effects">
+<caption aria-label="Type III Tests of Fixed Effects"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Type III Tests of Fixed Effects</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Effect</th>
+<th class="r b header" scope="col">Num DF</th>
+<th class="r b header" scope="col">Den DF</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Year</th>
+<td class="r data">2</td>
+<td class="r data">72</td>
+<td class="r data">177.27</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location</th>
+<td class="r data">1</td>
+<td class="r data">36</td>
+<td class="r data">55.25</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location</th>
+<td class="r data">2</td>
+<td class="r data">72</td>
+<td class="r data">6.01</td>
+<td class="r data">0.0039</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Family</th>
+<td class="r data">5</td>
+<td class="r data">36</td>
+<td class="r data">12.64</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Family</th>
+<td class="r data">10</td>
+<td class="r data">72</td>
+<td class="r data">5.39</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Location*Family</th>
+<td class="r data">5</td>
+<td class="r data">36</td>
+<td class="r data">0.82</td>
+<td class="r data">0.5439</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year*Location*Family</th>
+<td class="r data">10</td>
+<td class="r data">72</td>
+<td class="r data">0.51</td>
+<td class="r data">0.8776</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX12" aria-label="Solution for Random Effects">
+<h1 class="contentitem toc">Solution for Random Effects</h1>
+<table class="table" style="border-spacing: 0" aria-label="Solution for Random Effects">
+<caption aria-label="Solution for Random Effects"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="10" scope="colgroup">Solution for Random Effects</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Effect</th>
+<th class="b header" scope="col">Subject</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Std Err Pred</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&#160;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+<th class="r b header" scope="col">Alpha</th>
+<th class="r b header" scope="col">Lower</th>
+<th class="r b header" scope="col">Upper</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH25_Hill Farm_1</th>
+<td class="r data" style="white-space: nowrap">-0.1422</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-0.31</td>
+<td class="r data">0.7575</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.0655</td>
+<td class="r data">0.7811</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH25_Hill Farm_2</th>
+<td class="r data">0.2869</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.63</td>
+<td class="r data">0.5341</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.6364</td>
+<td class="r data">1.2102</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH25_Hill Farm_3</th>
+<td class="r data" style="white-space: nowrap">-0.2848</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-0.62</td>
+<td class="r data">0.5371</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.2081</td>
+<td class="r data">0.6385</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH25_Hill Farm_4</th>
+<td class="r data">0.1401</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.31</td>
+<td class="r data">0.7611</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.7832</td>
+<td class="r data">1.0634</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH25_LA Tech_1</th>
+<td class="r data" style="white-space: nowrap">-0.6896</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-1.51</td>
+<td class="r data">0.1393</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.6129</td>
+<td class="r data">0.2337</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH25_LA Tech_2</th>
+<td class="r data">0.1718</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.38</td>
+<td class="r data">0.7093</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.7515</td>
+<td class="r data">1.0951</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH25_LA Tech_3</th>
+<td class="r data">0.2293</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.50</td>
+<td class="r data">0.6190</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.6940</td>
+<td class="r data">1.1526</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH25_LA Tech_4</th>
+<td class="r data">0.2885</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.63</td>
+<td class="r data">0.5319</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.6348</td>
+<td class="r data">1.2118</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH2_Hill Farm_1</th>
+<td class="r data" style="white-space: nowrap">-0.3502</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-0.77</td>
+<td class="r data">0.4484</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.2735</td>
+<td class="r data">0.5731</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH2_Hill Farm_2</th>
+<td class="r data">0.2129</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.47</td>
+<td class="r data">0.6442</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.7104</td>
+<td class="r data">1.1362</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH2_Hill Farm_3</th>
+<td class="r data">0.2285</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.50</td>
+<td class="r data">0.6201</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.6948</td>
+<td class="r data">1.1518</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH2_Hill Farm_4</th>
+<td class="r data" style="white-space: nowrap">-0.09127</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-0.20</td>
+<td class="r data">0.8429</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.0146</td>
+<td class="r data">0.8320</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH2_LA Tech_1</th>
+<td class="r data" style="white-space: nowrap">-0.5441</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-1.19</td>
+<td class="r data">0.2412</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.4673</td>
+<td class="r data">0.3792</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH2_LA Tech_2</th>
+<td class="r data" style="white-space: nowrap">-0.2853</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-0.62</td>
+<td class="r data">0.5364</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.2086</td>
+<td class="r data">0.6380</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH2_LA Tech_3</th>
+<td class="r data">0.8694</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">1.90</td>
+<td class="r data">0.0643</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.05387</td>
+<td class="r data">1.7927</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGH2_LA Tech_4</th>
+<td class="r data" style="white-space: nowrap">-0.04006</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-0.09</td>
+<td class="r data">0.9307</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.9634</td>
+<td class="r data">0.8832</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS1_Hill Farm_1</th>
+<td class="r data" style="white-space: nowrap">-0.4909</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-1.07</td>
+<td class="r data">0.2896</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.4142</td>
+<td class="r data">0.4324</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS1_Hill Farm_2</th>
+<td class="r data">0.5528</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">1.21</td>
+<td class="r data">0.2338</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.3705</td>
+<td class="r data">1.4761</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS1_Hill Farm_3</th>
+<td class="r data">0.4166</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.91</td>
+<td class="r data">0.3679</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.5067</td>
+<td class="r data">1.3399</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS1_Hill Farm_4</th>
+<td class="r data" style="white-space: nowrap">-0.4785</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-1.05</td>
+<td class="r data">0.3017</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.4018</td>
+<td class="r data">0.4448</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS1_LA Tech_1</th>
+<td class="r data" style="white-space: nowrap">-1.1449</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-2.50</td>
+<td class="r data">0.0163</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-2.0682</td>
+<td class="r data" style="white-space: nowrap">-0.2216</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS1_LA Tech_2</th>
+<td class="r data" style="white-space: nowrap">-0.2571</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-0.56</td>
+<td class="r data">0.5772</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.1804</td>
+<td class="r data">0.6662</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS1_LA Tech_3</th>
+<td class="r data">0.8501</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">1.86</td>
+<td class="r data">0.0702</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.07321</td>
+<td class="r data">1.7734</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS1_LA Tech_4</th>
+<td class="r data">0.5519</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">1.21</td>
+<td class="r data">0.2346</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.3714</td>
+<td class="r data">1.4752</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS2_Hill Farm_1</th>
+<td class="r data" style="white-space: nowrap">-0.9490</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-2.07</td>
+<td class="r data">0.0442</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.8723</td>
+<td class="r data" style="white-space: nowrap">-0.02572</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS2_Hill Farm_2</th>
+<td class="r data">0.3246</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.71</td>
+<td class="r data">0.4821</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.5987</td>
+<td class="r data">1.2479</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS2_Hill Farm_3</th>
+<td class="r data">0.2169</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.47</td>
+<td class="r data">0.6381</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.7064</td>
+<td class="r data">1.1402</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS2_Hill Farm_4</th>
+<td class="r data">0.4075</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.89</td>
+<td class="r data">0.3783</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.5158</td>
+<td class="r data">1.3308</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS2_LA Tech_1</th>
+<td class="r data" style="white-space: nowrap">-0.9095</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-1.99</td>
+<td class="r data">0.0534</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.8328</td>
+<td class="r data">0.01377</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS2_LA Tech_2</th>
+<td class="r data">0.06896</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.15</td>
+<td class="r data">0.8810</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.8543</td>
+<td class="r data">0.9923</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS2_LA Tech_3</th>
+<td class="r data">0.7353</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">1.61</td>
+<td class="r data">0.1156</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.1880</td>
+<td class="r data">1.6586</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS2_LA Tech_4</th>
+<td class="r data">0.1053</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.23</td>
+<td class="r data">0.8192</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.8180</td>
+<td class="r data">1.0286</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS3_Hill Farm_1</th>
+<td class="r data" style="white-space: nowrap">-0.4208</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-0.92</td>
+<td class="r data">0.3631</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.3441</td>
+<td class="r data">0.5025</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS3_Hill Farm_2</th>
+<td class="r data" style="white-space: nowrap">-0.4823</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-1.05</td>
+<td class="r data">0.2980</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.4056</td>
+<td class="r data">0.4410</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS3_Hill Farm_3</th>
+<td class="r data">0.6032</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">1.32</td>
+<td class="r data">0.1946</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.3201</td>
+<td class="r data">1.5265</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS3_Hill Farm_4</th>
+<td class="r data">0.2999</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.66</td>
+<td class="r data">0.5159</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.6234</td>
+<td class="r data">1.2232</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS3_LA Tech_1</th>
+<td class="r data" style="white-space: nowrap">-0.6954</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-1.52</td>
+<td class="r data">0.1361</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.6187</td>
+<td class="r data">0.2279</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS3_LA Tech_2</th>
+<td class="r data" style="white-space: nowrap">-0.3490</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-0.76</td>
+<td class="r data">0.4500</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.2723</td>
+<td class="r data">0.5743</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS3_LA Tech_3</th>
+<td class="r data">0.9425</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">2.06</td>
+<td class="r data">0.0456</td>
+<td class="r data">0.05</td>
+<td class="r data">0.01919</td>
+<td class="r data">1.8658</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS3_LA Tech_4</th>
+<td class="r data">0.1019</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.22</td>
+<td class="r data">0.8249</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.8214</td>
+<td class="r data">1.0252</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS4_Hill Farm_1</th>
+<td class="r data" style="white-space: nowrap">-0.7912</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-1.73</td>
+<td class="r data">0.0911</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.7145</td>
+<td class="r data">0.1321</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS4_Hill Farm_2</th>
+<td class="r data">0.06875</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.15</td>
+<td class="r data">0.8813</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.8545</td>
+<td class="r data">0.9920</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS4_Hill Farm_3</th>
+<td class="r data">0.005591</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.01</td>
+<td class="r data">0.9903</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.9177</td>
+<td class="r data">0.9289</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS4_Hill Farm_4</th>
+<td class="r data">0.7168</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">1.57</td>
+<td class="r data">0.1247</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.2065</td>
+<td class="r data">1.6401</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS4_LA Tech_1</th>
+<td class="r data" style="white-space: nowrap">-0.5740</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data" style="white-space: nowrap">-1.25</td>
+<td class="r data">0.2167</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-1.4973</td>
+<td class="r data">0.3493</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS4_LA Tech_2</th>
+<td class="r data">0.2233</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.49</td>
+<td class="r data">0.6281</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.7000</td>
+<td class="r data">1.1466</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS4_LA Tech_3</th>
+<td class="r data">0.2200</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.48</td>
+<td class="r data">0.6332</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.7033</td>
+<td class="r data">1.1433</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="data">GLB AGHS4_LA Tech_4</th>
+<td class="r data">0.1306</td>
+<td class="r data">0.4578</td>
+<td class="r data">42.76</td>
+<td class="r data">0.29</td>
+<td class="r data">0.7768</td>
+<td class="r data">0.05</td>
+<td class="r data" style="white-space: nowrap">-0.7927</td>
+<td class="r data">1.0539</td>
+</tr>
+</tbody>
+</table>
+</article>
+<section id="IDX13">
+<h1 class="contentfolder toc">Slices</h1>
+<article aria-label="Year*Family F Test">
+<h1 class="contentitem toc">Year*Family F Test</h1>
+<table class="table" style="border-spacing: 0" aria-label="F Test for Year*Family Least Squares Means Slice">
+<caption aria-label="F Test for Year*Family Least Squares Means Slice"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">F Test for Year*Family Least Squares Means Slice</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Slice</th>
+<th class="r b header" scope="col">Num DF</th>
+<th class="r b header" scope="col">Den DF</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<td class="r data">5</td>
+<td class="r data">73.62</td>
+<td class="r data">1.24</td>
+<td class="r data">0.2982</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX14" aria-label="Year*Family Diffs">
+<h1 class="contentitem toc">Year*Family Diffs</h1>
+<table class="table" style="border-spacing: 0" aria-label="Simple Differences of Least Squares Means">
+<caption aria-label="Simple Differences of Least Squares Means"></caption>
+<colgroup><col/><col/><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Simple Differences of Year*Family Least Squares Means<br/>Adjustment for Multiple Comparisons: Tukey</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Slice</th>
+<th class="b header" scope="col">Family</th>
+<th class="b header" scope="col">_Family</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&#160;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+<th class="r b header" scope="col">Adj P</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGH2</th>
+<th class="data">AGH25</th>
+<td class="r data">0.06438</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">0.13</td>
+<td class="r data">0.8950</td>
+<td class="r data">1.0000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS1</th>
+<td class="r data" style="white-space: nowrap">-0.5890</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-1.21</td>
+<td class="r data">0.2295</td>
+<td class="r data">0.8297</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS2</th>
+<td class="r data" style="white-space: nowrap">-0.9529</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-1.96</td>
+<td class="r data">0.0537</td>
+<td class="r data">0.3750</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS3</th>
+<td class="r data" style="white-space: nowrap">-0.3868</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-0.80</td>
+<td class="r data">0.4287</td>
+<td class="r data">0.9674</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS4</th>
+<td class="r data" style="white-space: nowrap">-0.2169</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-0.45</td>
+<td class="r data">0.6567</td>
+<td class="r data">0.9977</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS1</th>
+<td class="r data" style="white-space: nowrap">-0.6534</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-1.34</td>
+<td class="r data">0.1830</td>
+<td class="r data">0.7594</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS2</th>
+<td class="r data" style="white-space: nowrap">-1.0173</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-2.09</td>
+<td class="r data">0.0398</td>
+<td class="r data">0.3027</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS3</th>
+<td class="r data" style="white-space: nowrap">-0.4512</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-0.93</td>
+<td class="r data">0.3563</td>
+<td class="r data">0.9379</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS4</th>
+<td class="r data" style="white-space: nowrap">-0.2813</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-0.58</td>
+<td class="r data">0.5646</td>
+<td class="r data">0.9921</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGHS1</th>
+<th class="data">AGHS2</th>
+<td class="r data" style="white-space: nowrap">-0.3639</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-0.75</td>
+<td class="r data">0.4565</td>
+<td class="r data">0.9750</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGHS1</th>
+<th class="data">AGHS3</th>
+<td class="r data">0.2023</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">0.42</td>
+<td class="r data">0.6786</td>
+<td class="r data">0.9983</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGHS1</th>
+<th class="data">AGHS4</th>
+<td class="r data">0.3721</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">0.77</td>
+<td class="r data">0.4464</td>
+<td class="r data">0.9724</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGHS2</th>
+<th class="data">AGHS3</th>
+<td class="r data">0.5661</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">1.16</td>
+<td class="r data">0.2479</td>
+<td class="r data">0.8520</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGHS2</th>
+<th class="data">AGHS4</th>
+<td class="r data">0.7360</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">1.51</td>
+<td class="r data">0.1343</td>
+<td class="r data">0.6564</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGHS3</th>
+<th class="data">AGHS4</th>
+<td class="r data">0.1699</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">0.35</td>
+<td class="r data">0.7277</td>
+<td class="r data">0.9993</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX15" aria-label="Year*Family Lines">
+<h1 class="contentitem toc">Year*Family Lines</h1>
+<table class="table" style="border-spacing: 0" aria-label="Tukey Grouping for Year*Family Least Squares Means Slice (Alpha=0.05)">
+<caption aria-label="Tukey Grouping for Year*Family Least Squares Means Slice (Alpha=0.05)"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Tukey Grouping for Year*Family Least Squares Means Slice (Alpha=0.05)</th>
+</tr>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">LS-means with the same letter are not significantly different.</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Slice</th>
+<th class="b header" scope="col">Family</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="c headerempty" scope="col">&#160;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGHS2</th>
+<td class="r data">1.7861</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGHS1</th>
+<td class="r data">1.4222</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGHS3</th>
+<td class="r data">1.2199</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGHS4</th>
+<td class="r data">1.0501</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGH2</th>
+<td class="r data">0.8332</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Fifth</th>
+<th class="data">AGH25</th>
+<td class="r data">0.7688</td>
+<td class="data">A</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX16" aria-label="Year*Family F Test">
+<h1 class="contentitem toc">Year*Family F Test</h1>
+<table class="table" style="border-spacing: 0" aria-label="F Test for Year*Family Least Squares Means Slice">
+<caption aria-label="F Test for Year*Family Least Squares Means Slice"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">F Test for Year*Family Least Squares Means Slice</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Slice</th>
+<th class="r b header" scope="col">Num DF</th>
+<th class="r b header" scope="col">Den DF</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<td class="r data">5</td>
+<td class="r data">73.62</td>
+<td class="r data">15.34</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX17" aria-label="Year*Family Diffs">
+<h1 class="contentitem toc">Year*Family Diffs</h1>
+<table class="table" style="border-spacing: 0" aria-label="Simple Differences of Least Squares Means">
+<caption aria-label="Simple Differences of Least Squares Means"></caption>
+<colgroup><col/><col/><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Simple Differences of Year*Family Least Squares Means<br/>Adjustment for Multiple Comparisons: Tukey</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Slice</th>
+<th class="b header" scope="col">Family</th>
+<th class="b header" scope="col">_Family</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&#160;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+<th class="r b header" scope="col">Adj P</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGH2</th>
+<th class="data">AGH25</th>
+<td class="r data">0.1479</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">0.30</td>
+<td class="r data">0.7619</td>
+<td class="r data">0.9996</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS1</th>
+<td class="r data" style="white-space: nowrap">-2.6354</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-5.42</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS2</th>
+<td class="r data" style="white-space: nowrap">-3.0426</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-6.26</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS3</th>
+<td class="r data" style="white-space: nowrap">-1.7339</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-3.57</td>
+<td class="r data">0.0006</td>
+<td class="r data">0.0082</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS4</th>
+<td class="r data" style="white-space: nowrap">-2.1311</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-4.38</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">0.0005</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS1</th>
+<td class="r data" style="white-space: nowrap">-2.7833</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-5.73</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS2</th>
+<td class="r data" style="white-space: nowrap">-3.1904</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-6.56</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS3</th>
+<td class="r data" style="white-space: nowrap">-1.8818</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-3.87</td>
+<td class="r data">0.0002</td>
+<td class="r data">0.0031</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS4</th>
+<td class="r data" style="white-space: nowrap">-2.2789</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-4.69</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">0.0002</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGHS1</th>
+<th class="data">AGHS2</th>
+<td class="r data" style="white-space: nowrap">-0.4072</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-0.84</td>
+<td class="r data">0.4049</td>
+<td class="r data">0.9594</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGHS1</th>
+<th class="data">AGHS3</th>
+<td class="r data">0.9015</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">1.85</td>
+<td class="r data">0.0677</td>
+<td class="r data">0.4382</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGHS1</th>
+<th class="data">AGHS4</th>
+<td class="r data">0.5043</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">1.04</td>
+<td class="r data">0.3029</td>
+<td class="r data">0.9036</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGHS2</th>
+<th class="data">AGHS3</th>
+<td class="r data">1.3087</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">2.69</td>
+<td class="r data">0.0088</td>
+<td class="r data">0.0893</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGHS2</th>
+<th class="data">AGHS4</th>
+<td class="r data">0.9115</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">1.88</td>
+<td class="r data">0.0647</td>
+<td class="r data">0.4256</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGHS3</th>
+<th class="data">AGHS4</th>
+<td class="r data" style="white-space: nowrap">-0.3972</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-0.82</td>
+<td class="r data">0.4165</td>
+<td class="r data">0.9635</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX18" aria-label="Year*Family Lines">
+<h1 class="contentitem toc">Year*Family Lines</h1>
+<table class="table" style="border-spacing: 0" aria-label="Tukey Grouping for Year*Family Least Squares Means Slice (Alpha=0.05)">
+<caption aria-label="Tukey Grouping for Year*Family Least Squares Means Slice (Alpha=0.05)"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Tukey Grouping for Year*Family Least Squares Means Slice (Alpha=0.05)</th>
+</tr>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">LS-means with the same letter are not significantly different.</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Slice</th>
+<th class="b header" scope="col">Family</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="c headerempty" scope="col">&#160;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGHS2</th>
+<td class="r data">5.2601</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGHS1</th>
+<td class="r data">4.8530</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGHS4</th>
+<td class="r data">4.3486</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGHS3</th>
+<td class="r data">3.9514</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGH2</th>
+<td class="r data">2.2175</td>
+<td class="data">B</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">B</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Seventh</th>
+<th class="data">AGH25</th>
+<td class="r data">2.0697</td>
+<td class="data">B</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX19" aria-label="Year*Family F Test">
+<h1 class="contentitem toc">Year*Family F Test</h1>
+<table class="table" style="border-spacing: 0" aria-label="F Test for Year*Family Least Squares Means Slice">
+<caption aria-label="F Test for Year*Family Least Squares Means Slice"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">F Test for Year*Family Least Squares Means Slice</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Slice</th>
+<th class="r b header" scope="col">Num DF</th>
+<th class="r b header" scope="col">Den DF</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<td class="r data">5</td>
+<td class="r data">73.62</td>
+<td class="r data">13.84</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX20" aria-label="Year*Family Diffs">
+<h1 class="contentitem toc">Year*Family Diffs</h1>
+<table class="table" style="border-spacing: 0" aria-label="Simple Differences of Least Squares Means">
+<caption aria-label="Simple Differences of Least Squares Means"></caption>
+<colgroup><col/><col/><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Simple Differences of Year*Family Least Squares Means<br/>Adjustment for Multiple Comparisons: Tukey</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Slice</th>
+<th class="b header" scope="col">Family</th>
+<th class="b header" scope="col">_Family</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&#160;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+<th class="r b header" scope="col">Adj P</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGH2</th>
+<th class="data">AGH25</th>
+<td class="r data" style="white-space: nowrap">-0.4612</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-0.95</td>
+<td class="r data">0.3459</td>
+<td class="r data">0.9322</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS1</th>
+<td class="r data" style="white-space: nowrap">-2.7922</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-5.74</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS2</th>
+<td class="r data" style="white-space: nowrap">-3.1903</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-6.56</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS3</th>
+<td class="r data" style="white-space: nowrap">-2.1436</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-4.41</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">0.0005</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGH2</th>
+<th class="data">AGHS4</th>
+<td class="r data" style="white-space: nowrap">-2.1314</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-4.38</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">0.0005</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS1</th>
+<td class="r data" style="white-space: nowrap">-2.3311</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-4.80</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">0.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS2</th>
+<td class="r data" style="white-space: nowrap">-2.7291</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-5.61</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS3</th>
+<td class="r data" style="white-space: nowrap">-1.6824</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-3.46</td>
+<td class="r data">0.0009</td>
+<td class="r data">0.0113</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGH25</th>
+<th class="data">AGHS4</th>
+<td class="r data" style="white-space: nowrap">-1.6703</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-3.44</td>
+<td class="r data">0.0010</td>
+<td class="r data">0.0122</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGHS1</th>
+<th class="data">AGHS2</th>
+<td class="r data" style="white-space: nowrap">-0.3981</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data" style="white-space: nowrap">-0.82</td>
+<td class="r data">0.4155</td>
+<td class="r data">0.9631</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGHS1</th>
+<th class="data">AGHS3</th>
+<td class="r data">0.6486</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">1.33</td>
+<td class="r data">0.1862</td>
+<td class="r data">0.7650</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGHS1</th>
+<th class="data">AGHS4</th>
+<td class="r data">0.6608</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">1.36</td>
+<td class="r data">0.1782</td>
+<td class="r data">0.7507</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGHS2</th>
+<th class="data">AGHS3</th>
+<td class="r data">1.0467</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">2.15</td>
+<td class="r data">0.0346</td>
+<td class="r data">0.2725</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGHS2</th>
+<th class="data">AGHS4</th>
+<td class="r data">1.0589</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">2.18</td>
+<td class="r data">0.0326</td>
+<td class="r data">0.2606</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGHS3</th>
+<th class="data">AGHS4</th>
+<td class="r data">0.01218</td>
+<td class="r data">0.4861</td>
+<td class="r data">73.62</td>
+<td class="r data">0.03</td>
+<td class="r data">0.9801</td>
+<td class="r data">1.0000</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX21" aria-label="Year*Family Lines">
+<h1 class="contentitem toc">Year*Family Lines</h1>
+<table class="table" style="border-spacing: 0" aria-label="Tukey Grouping for Year*Family Least Squares Means Slice (Alpha=0.05)">
+<caption aria-label="Tukey Grouping for Year*Family Least Squares Means Slice (Alpha=0.05)"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Tukey Grouping for Year*Family Least Squares Means Slice (Alpha=0.05)</th>
+</tr>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">LS-means with the same letter are not significantly different.</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Slice</th>
+<th class="b header" scope="col">Family</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="c headerempty" scope="col">&#160;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGHS2</th>
+<td class="r data">4.4584</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGHS1</th>
+<td class="r data">4.0603</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGHS3</th>
+<td class="r data">3.4117</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGHS4</th>
+<td class="r data">3.3995</td>
+<td class="data">A</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGH25</th>
+<td class="r data">1.7292</td>
+<td class="data">B</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">&#160;</th>
+<td class="r data">&#160;</td>
+<td class="data">B</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Year Sixth</th>
+<th class="data">AGH2</th>
+<td class="r data">1.2681</td>
+<td class="data">B</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+</div>
+</body>
+</html>
